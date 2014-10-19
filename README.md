@@ -4,7 +4,7 @@ ImageJS
 Simple (and library agnostic) library for loading images in Javascript. Preloading images is as simple as:
 
 ```javascript
-ImageJS.load('http://preview.imagehunter.apollomapping.com/2013/103001000F9B2700.png');
+ImageJS.load('http://i.imgur.com/5AEdh4K.png');
 ```
 
 ### Callbacks ###
@@ -31,7 +31,7 @@ Load an image, and display it when it finishes loading. Assumes the target eleme
 
 ```javascript
 ImageJS.load({
-    url: 'http://preview.imagehunter.apollomapping.com/2013/103001000F9B2700.png',
+    url: 'http://i.imgur.com/5AEdh4K.png',
     done: function(url, width, height) {
         document.getElementById('image').src = url;
     }
@@ -42,7 +42,7 @@ Full example with spinner placeholder.
 
 ```javascript
 ImageJS.load({
-    url: 'http://preview.imagehunter.apollomapping.com/2013/103001000F9B2700.png',
+    url: 'http://i.imgur.com/5AEdh4K.png',
     start: function() {
         $('#image')
             .css('background-image', 'url("http://www.ajaxload.info/cache/FF/FF/FF/00/00/00/5-0.gif")')
